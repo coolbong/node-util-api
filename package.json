@@ -1,0 +1,24 @@
+{
+    "name": "node-util-api",
+    "version": "0.0.1",
+    "description": "node-util api",
+    "main": "index.js",
+    "keywords": [
+        "util"
+    ],
+    "author": {
+        "name": "coolbong",
+        "email": "coolbong.works@gmail.com"
+    },
+    "devDependencies": {
+        "mocha": "~1.11.0"
+    },
+    "license": {
+        "type": "MIT"
+    },
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/coolbong/node-util-api"
+    }
+}
+
