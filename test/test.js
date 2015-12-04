@@ -27,6 +27,26 @@ exports.predefined = {
     'string' : {
         'chunk' : function() {
 
+        },
+        'fill' :  {
+            'fill right 1' : function() {
+                var str = '241234';
+                var result = str.fill(8);
+                var answer = '24123400000000';
+                assert (answer == result);
+            },
+            'fill right 2' : function() {
+                var str = '241234';
+                var result = str.fill(8, 'f');
+                var answer = '241234ffffffff';
+                assert (answer == result);
+            },
+            'fill right 3' : function() {
+                var str = '241234';
+                var result = str.fill(8, 0, true);
+                var answer = '00000000241234';
+                assert (answer == result);
+            }
         }
     }
 };

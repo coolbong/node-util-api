@@ -6,6 +6,7 @@ var assert = require('assert');
 var fs = require('fs');
 var fsutil = require('../index');
 
+
 exports.fsutil = {
     'list' : {
         'test1' : function() {
