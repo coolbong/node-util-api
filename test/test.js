@@ -47,6 +47,25 @@ exports.predefined = {
                 var answer = '00000000241234';
                 assert (answer == result);
             }
+        },
+        'toBoolean' : function() {
+            var strTrue = 'true';
+
+            var ret = strTrue.toBoolean();
+            assert (ret === true);
+
+            strTrue = 'True';
+            ret = strTrue.toBoolean();
+            assert (ret === true);
+
+            strTrue = 'TRUE';
+            ret = strTrue.toBoolean();
+            assert (ret === true);
+
+            var strFalse = 'false';
+            ret = strFalse.toBoolean();
+            assert (ret === false);
         }
+
     }
 };
