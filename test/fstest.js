@@ -16,6 +16,13 @@ exports.fsutil = {
         'test2' : function() {
             var files = fsutil.getFiles('./lib');
             console.log(files);
+        },
+        'test3 getFiles With extention' : function() {
+            var files = fsutil.getFiles('.', ['.js']);
+            console.log(files);
+
+            files = fsutil.getFiles('.', '.js');
+            console.log(files);
         }
     },
     'mkdir' : {
