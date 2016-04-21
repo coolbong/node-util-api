@@ -1,6 +1,6 @@
 {
     "name": "node-util-api",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "node-util api",
     "main": "index.js",
     "keywords": [
