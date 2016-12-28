@@ -64,6 +64,15 @@ exports.fsutil = {
             var filename = './test2/hello4.txt';
             var file = fsutil.createFile(filename);
             file.end('hello world!!');
+        },
+        'create text write array' : function() {
+            var filename = './test2/hello5.txt';
+            var file = fsutil.createFile(filename);
+            var arr = [];
+            arr.push('hello world');
+            arr.push('hello file 5');
+            file.println(arr);
+            file.end();
         }
 
     }
